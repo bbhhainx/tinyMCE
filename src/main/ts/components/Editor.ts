@@ -56,6 +56,7 @@ export const Editor = defineComponent({
         target: element.value,
         plugins: mergePlugins(conf.plugins, props.plugins),
         toolbar: props.toolbar || (conf.toolbar),
+        statusbar: false,
         inline: inlineEditor,
         license_key: props.licenseKey,
         setup: (editor: TinyMCEEditor) => {
